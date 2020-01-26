@@ -5,11 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>Training</groupId>
-  <artifactId>Demo</artifactId>
+  <artifactId>sub</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
 
-  <name>Demo</name>
+  <name>sub</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -19,12 +18,12 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
-  <modules>
-	<module>add</module>
-	<module>sub</module>
-	</modules>	
-	
-	
+	<parent>
+	<groupId>Training</groupId>
+  <artifactId>Demo</artifactId>
+  <version>1.0-SNAPSHOT</version>
+	</parent>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
